@@ -34,6 +34,9 @@ char tempo_site(int telescope_id) /*includefile*/
   case 10:
     return('z'); /*SRT*/
     break;
+  case 40:
+    return('n'); /*NenuFAR*/
+    break;
   case 64:
     return('m'); /*MeerKAT*/
     break;
@@ -83,6 +86,9 @@ char *telescope_name (int telescope_id) /*includefile*/
     break;
   case 10: 
     strcpy(string,"SRT");
+    break;
+  case 40:
+    strcpy(string,"NenuFAR");
     break;
   case 64:
     strcpy(string,"MeerKAT");
@@ -141,6 +147,9 @@ char *backend_name (int machine_id) /*includefile*/
     break;
   case 14:
     strcpy(string,"GMRTNEW");
+    break;
+  case 40:
+    strcpy(string,"NenuFAR-LUPPI");
     break;
   case 64:
     strcpy(string,"KAT");
